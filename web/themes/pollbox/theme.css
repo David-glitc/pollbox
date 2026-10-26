@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700&family=Courier+Prime:wght@700&display=swap');
+/* Pollbox: a community call where everyone votes. Civic midnight blue, sky ballots, cream paper slips, rubber-stamp marks. */
+:root{--scheme:dark;--bg:#0A0F1A;--surface:#111827;--surface-2:#1A2233;--input-bg:#070B13;--tile:#1A2233;
+ --ink:#F5F1E6;--ink-2:#AAB2C2;--line:#263043;--line-strong:#67728A;
+ --accent:#6CB8FF;--accent-hover:#93CBFF;--accent-ink:#06192C;--accent-text:#7CC0FF;--link:#F5D58A;--focus:#F5D58A;
+ --danger:#FF6F61;--danger-bg:#2D1416;--danger-text:#FF9B90;--scrim:rgba(4,6,12,.78);
+ --radius-sm:2px;--radius-md:4px;--radius-lg:8px;--radius-btn:6px;--radius-pill:999px;--border-w:2px;
+ --shadow-1:0 14px 32px rgba(0,0,0,.4);--shadow-2:0 26px 60px rgba(0,0,0,.6);--shadow-btn:0 3px 0 #06192C;
+ --font-display:'Archivo Black',system-ui,sans-serif;--font-body:'Archivo',system-ui,sans-serif;--font-label:'Archivo',system-ui,sans-serif;--font-mono:'Courier Prime',ui-monospace,monospace;
+ --display-weight:400;--display-tracking:-0.02em;--display-case:uppercase;--label-tracking:.16em;
+ --hero-bg:radial-gradient(50% 55% at 75% 40%,rgba(108,184,255,.26),transparent 70%),radial-gradient(35% 40% at 10% 85%,rgba(245,213,138,.12),transparent 70%),var(--bg);
+ --hero-pattern:linear-gradient(45deg,rgba(245,241,230,.07) 25%,transparent 25%,transparent 75%,rgba(245,241,230,.07) 75%);--hero-pattern-size:36px 36px;--hero-pattern-opacity:.7;
+ --chip-bg:rgba(17,24,39,.85);--live:#6CB8FF;--live-ring:rgba(108,184,255,.3);--art-glow:radial-gradient(circle,rgba(108,184,255,.5),rgba(245,213,138,.18) 55%,transparent 72%);--ticker-bg:#111827}
+/* Ballot slips: cream paper steps with a stamped check box, uppercase civic headlines. */
+h1{font-size:clamp(2.4rem,6vw,5rem);line-height:1}
+.steps li{background:#F5F1E6;border:0;color:#1B2230;border-radius:var(--radius-sm);box-shadow:0 16px 36px rgba(0,0,0,.45);position:relative;padding-left:64px}
+.steps li h3{color:#1B2230}.steps li p{color:#4A5263}
+.steps li:before{position:absolute;left:20px;top:26px;width:28px;height:28px;margin:0;display:grid;place-items:center;border:2.5px solid #1B2230;color:#0D4F8F;font-size:.72rem}
+.features div{border-left:4px double var(--accent);padding-left:18px}
+.eyebrow{border:2px solid var(--accent-text);padding:3px 8px;border-radius:var(--radius-sm)}
+.cta-band{background:var(--surface);border:2px dashed var(--line-strong)}
+@media(prefers-reduced-motion:reduce){.steps li,.features div{transform:none!important}}
